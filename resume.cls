@@ -1,24 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV - RESUME CLASS FILE
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% This class file defines the structure and design of the template. 
-%
-% Original header:
-% Copyright (C) 2010 by Trey Hunner
-%
-% Copying and distribution of this file, with or without modification,
-% are permitted in any medium without royalty provided the copyright
-% notice and this notice are preserved. This file is offered as-is,
-% without any warranty.
-%
-% Created by Trey Hunner and modified by www.LaTeXTemplates.com
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
+\ProvidesClass{resume}[24/03/2017]
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
@@ -111,7 +91,7 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[5]{ % 5 input arguments - company name, job title, year(s) employed, technologies and location
- {\bf #1}{, #2} \hfill {#3} % Bold company name and date on the right
+ {\bf #1}{ #2} \hfill {#3} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #4} \hfill {\em #5} % Italic job title and location
